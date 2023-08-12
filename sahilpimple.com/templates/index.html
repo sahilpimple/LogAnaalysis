@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log Analysis Tool</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Log Analysis Tool</h1>
+        <form id="logForm">
+            <label for="logFile">Upload Log File:</label>
+            <input type="file" id="logFile" accept=".log" />
+            <button type="button" onclick="app.py">Analyze</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
+
